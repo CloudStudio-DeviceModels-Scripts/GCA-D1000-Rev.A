@@ -26,8 +26,7 @@ function getEndpoints(deviceAddress, endpoints)
   endpoints.addEndpoint("1", "Sensor de puerta", endpointType.iasSensor, iasEndpointSubType.doorSensor);
   endpoints.addEndpoint("2", "Sensor de temperatura", endpointType.temperatureSensor);
   endpoints.addEndpoint("3", "Buzzer", endpointType.appliance);
-  var ep = endpoints.addEndpoint("4", "Test", endpointType.genericSensor);
-  ep.variableTypeId = 1140;
+  endpoints.addEndpoint("4", "Volumen", endpointType.volumeSensor);
 }
 
 function validateDeviceAddress(address, result)
