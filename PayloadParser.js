@@ -17,6 +17,7 @@ function parseUplink(device, payload)
 
 	// El payload es json, así que es más sencillo manejarlo como array de bytes
 	var data = payload.asJsonObject();
+    env.Log(data);
 	
 	// Parsear y almacenar el estado de la puerta
 	var doorSensor = device.endpoints.byType(endpointType.iasSensor);
